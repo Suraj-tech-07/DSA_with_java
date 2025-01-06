@@ -18,5 +18,6 @@ public class traingle_0_1 {
             }
             System.out.println();
         }
+        obj.close();
     }
 }
