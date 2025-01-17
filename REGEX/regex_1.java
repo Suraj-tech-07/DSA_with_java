@@ -1,14 +1,12 @@
 package REGEX;
+
 import java.util.regex.*;
+
 public class regex_1 {
     public static void main(String[] args) {
-        Pattern pattern = Pattern.compile("w3schools", Pattern.CASE_INSENSITIVE);
-        Matcher matcher = pattern.matcher("Visit W3Schools!");
+        Pattern pattern = Pattern.compile("a{3}");
+        Matcher matcher = pattern.matcher("aaaaa");
         boolean matchFound = matcher.find();
-        if (matchFound) {
-            System.out.println("Match found");
-        } else {
-            System.out.println("Match not found");
-        }
+        System.out.println("Result : " + matchFound);
     }
 }
